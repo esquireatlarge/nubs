@@ -1,4 +1,5 @@
 #include <climits>
+#include <cstdio>
 
 int numBitsSet1(int value)
 {
