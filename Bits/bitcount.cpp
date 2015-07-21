@@ -1,5 +1,6 @@
 #include <climits>
 #include <cstdio>
+#include <time.h>
 
 int numBitsSet1(int value)
 {
@@ -38,9 +39,16 @@ int numBitsSet2(int value)
 int main()
 {
 	//Count the number of bits set to 1 for an integer.
-	printf("%d", numBitsSet1(5));
+	clock_t startOne = clock();
+	printf("%d\n", numBitsSet1(5));
+	clock_t endOne = clock();
 	
-	printf("%d", numBitsSet2(5));
+	clock_t startTwo = clock();
+	printf("%d\n", numBitsSet2(5));
+	clock_t endTwo = clock();
+	
+	printf("First function took %f seconds\n", (endOne - startOne));
+	printf("Second function took %f seconds\n", (endTwo - startTwo));
 	
 	return 0;
 }
