@@ -47,8 +47,8 @@ int main()
 	printf("%d\n", numBitsSet2(5));
 	clock_t endTwo = clock();
 	
-	printf("First function took %f seconds\n", (endOne - startOne));
-	printf("Second function took %f seconds\n", (endTwo - startTwo));
+	printf("First function took %f seconds\n", double(endOne - startOne) / CLOCKS_PER_SEC);
+	printf("Second function took %f seconds\n", double(endTwo - startTwo) / CLOCKS_PER_SEC);
 	
 	return 0;
 }
