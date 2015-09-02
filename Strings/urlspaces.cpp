@@ -4,6 +4,8 @@
 //Assumptions that can be made include that the string has enough space to hold the extra characters at the end.
 //Could also use strtok.
 
+//After I checked Gayle's answer I see she did it end to beginning instead.  I don't see any difference between my approach and hers.
+
 #include <cstring>
 #include <cstdio>
 
